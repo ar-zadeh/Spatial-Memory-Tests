@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="VcsDirectoryMappings">
+    <mapping directory="$PROJECT_DIR$/corsi_memory_test/DC_V2/DeployableCorsi" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/corsi_memory_test/DeployableCorsi" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/corsi_memory_test/HCAI.corsi.io" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/corsi_memory_test/corsi.github.io" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/magpie-mental-rotation" vcs="Git" />
+  </component>
+</project>

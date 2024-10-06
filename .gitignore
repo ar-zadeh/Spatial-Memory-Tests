@@ -1,0 +1,9 @@
+# files to ignore
+Analysis/
+Participants/
+Screenshot/
+Subjects/
+Videos/
+corsi_memory_test/DC_V2
+corsi_memory_test/DeployableCorsi
+corsi_memory_test/corsi.github.io

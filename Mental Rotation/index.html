@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Comparison Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body><script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.5.0-beta4/html2canvas.min.js"></script>
+
+    <div id="game-container">
+        <p id="countdown">Time remaining: 300 seconds</p>
+
+        <h1 id="title"></h1> <!-- added title element -->
+        <img id="image" src="" alt="image">
+        <button id="proceed-button" onclick="proceedToMainPhase()" style="display: none">Proceed to the actual game</button>
+        <div id="buttons">
+            <button onclick="checkAnswer('same')">Same</button>
+            <button onclick="checkAnswer('different')">Different</button>
+
+        </div>
+        <div id="feedback"></div>
+    </div>
+    <script src="trials.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

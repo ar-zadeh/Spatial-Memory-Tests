@@ -1,0 +1,9 @@
+Subjects ID,Game ID,(A) Gender,(B) Driving Habits,(C) Maze level,(D) Visual Cue type = (ABC),Primary Hand
+s1,1,Male,No,Easy,Color,left
+s2,2,Female,No,Easy,Object,left
+s3,3,Male,Yes,Easy,Object,right
+s4,4,Female,Yes,Easy,Color,right
+s5,5,Male,No,Hard,Object,left
+s6,6,Female,No,Hard,Color,left
+s7,7,Male,Yes,Hard,Color,right
+s8,8,Female,Yes,Hard,Object,right

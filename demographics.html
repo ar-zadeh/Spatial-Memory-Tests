@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demographic Information</title>
+    <link rel="stylesheet" href="style_demo.css">
+    <script src="demographics.js" defer></script>
+</head>
+<body><script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.5.0-beta4/html2canvas.min.js"></script>
+
+    <header>
+        <h1>Demographic Information</h1>
+    </header>
+    <main>
+        <form id="demographics-form">
+            <label for="gender">Gender:</label>
+            <select name="gender" id="gender" required>
+                <option value="">Select Gender</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select>
+
+            <label for="age">Age:</label>
+            <input type="number" name="age" id="age" min="1" max="120" required>
+
+            <label for="education">Education:</label>
+            <select name="education" id="education" required>
+                <option value="">Select Education</option>
+                <option value="HighSchool">HighSchool</option>
+                <option value="Undergraduate">Undergraduate</option>
+                <option value="Master">Master</option>
+                <option value="Phd">Phd</option>
+            </select>
+            <label for="Drive">Drive often?:</label>
+            <select name="Drive" id="Drive" required>
+                <option value="Noans">Don't want to answer</option>
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
+            </select>
+            <label for="VR">VR experience:</label>
+            <select name="VR" id="VR" required>
+                <option value="nothing">No experience</option>
+                <option value="Limit">Limited Experience</option>
+                <option value="Exp">Experienced</option>
+            </select>
+            <button type="submit">Submit</button>
+
+        </form>
+        <!-- <button type="button" onclick="downloadCSV()">Download All Test Results</button> -->
+        <button onclick="downloadCSV()">Download All Test Results</button>
+
+    </main>
+</body>
+</html>

@@ -1,0 +1,16 @@
+import openvr
+import time
+
+openvr.init(openvr.VRApplication_Scene)
+try:
+    with open('vr_button_presses.txt', 'w') as f:
+        while True:
+            for device_index in range(openvr.k_unMaxTrackedDeviceCount):
+                device_class = openvr.VRSystem().getTrackedDeviceClass(device_index)
+                if device_class == openvr.TrackedDeviceClass_Controller:
+                    state = openvr.VRSystem().getControllerState(device_index)
+                    buttons_pressed = state[1].ulButtonPressed
+                    f.write(f"Device {device_index} buttons pressed: {buttons_pressed}\n")
+            time.sleep(0.1)
+finally:
+    openvr.shutdown()
